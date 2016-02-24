@@ -252,8 +252,6 @@ public class ConnectionIndicatorView extends View {
         }
     }
 
-
-
     private Paint getPaintForConnectionLevel( int level ) {
         if ( (barCount % connectionLevels) == 0 ) {
             if ( level == 1 )
@@ -293,9 +291,10 @@ public class ConnectionIndicatorView extends View {
      * Sets the indicator to be at the specified level. 0 is no bars, 1 is 1 bar and so on.
      *
      * @param connectionLevel - The amount of bars to show as solid.
+     *                        If a connection level is entered that is > than the amount of bars then it is set to the bar count.
      */
     public void displayConnectionLevel( int connectionLevel ) {
-        setConnectionLevel( connectionLevel );
+        setConnectionLevel( Math.min(barCount,connectionLevel) );
     }
 
     private void setConnectionLevel( int connectionLevel ) {
