@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ConnectionIndicatorView">
+        <attr name="emptyBarColor" format="color"/>
+        <attr name="solidSearchBarColor" format="color"/>
+        <attr name="connectionLevelOneColor" format="color"/>
+        <attr name="connectionLevelTwoColor" format="color"/>
+        <attr name="connectionLevelThreeColor" format="color"/>
+        <attr name="connectionLevelFourColor" format="color"/>
+        <attr name="connectionLevelFiveColor" format="color"/>
+        <attr name="connectionLevelSixColor" format="color"/>
+
+        <attr name="bars" format="integer"/>
+        <attr name="connectionLevels" format="integer"/>
+
+        <attr name="animIntervalMillis" format="integer"/>
+        <attr name="animType" format="enum">
+            <enum name="incremental" value="0"/>
+            <enum name="flash" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

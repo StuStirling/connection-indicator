@@ -1,0 +1,3 @@
+include ':connection-indicator'
+
+rootProject.name = 'connection-indicator-parent'
