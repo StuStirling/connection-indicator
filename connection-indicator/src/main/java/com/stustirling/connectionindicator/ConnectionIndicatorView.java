@@ -351,6 +351,10 @@ public class ConnectionIndicatorView extends View {
         return barCount;
     }
 
+    public int getConnectionLevel() {
+        return currentConnectionLevel;
+    }
+
 
 
 }
