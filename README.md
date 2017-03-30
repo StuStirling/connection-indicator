@@ -1,6 +1,8 @@
 # Connection Indicator
 A very small library to implement a connection indicator view. These connections may be GPS, Network or other loading indicators.
 
+![](https://github.com/StuStirling/connection-indicator/blob/master/assets/sample-demo.gif?raw=true)
+
 This is only an initial version of the library and I will be making improvements as I go. 
 
 At the moment there aren't any attribute setters in code. All attributes must be set via XML.
